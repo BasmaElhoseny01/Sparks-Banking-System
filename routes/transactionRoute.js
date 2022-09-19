@@ -22,8 +22,7 @@ module.exports = (app) => {
 
 
     //2.Make A Transaction
-    /**Retrieve All Transactions 
-     * response:-(on success) { status: 200, TransactionsCollections(array) }
+    /* response:-(on success) { status: 200, TransactionsCollections(array) }
      *          -(on fail) { status: 404, Message: "No Payer With This ID" }
      *          -(on fail) { status: 404, Message: "No Payee With This ID"  }
      * 

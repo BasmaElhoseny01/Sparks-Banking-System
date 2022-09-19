@@ -33,7 +33,7 @@ function CustomerCard({ Customer, index }) {
             alert("Fill All Fields")
         }
         else {
-            // event.preventDefault();
+            event.preventDefault();
             axios.put('/Transfer', { Payer: Customer._id, Payee, Amount: Balance })
                 .then((response) => {
                     try {
@@ -44,6 +44,7 @@ function CustomerCard({ Customer, index }) {
                         }
                         else {
                             alert(response.data.Message)
+                            window.location.reload(false);
                         }
                     }
                     catch (error) {
