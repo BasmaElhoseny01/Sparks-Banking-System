@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 import NavBar from './Components/NavBar';
 import Home from './Components/Home';
@@ -11,6 +12,11 @@ import Footer from './Components/Footer';
 import './style.css'
 
 function App() {
+
+  useEffect(() => {
+    document.title = "Online Banking"
+  }, [])
+
   return (
     <div className="App">
       <Router>
@@ -19,10 +25,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/NewCustomer" element={<NewCustomer />} />
           <Route path="/Customers" element={<ViewCustomers />} />
-          <Route path="/Transactions" element={<Transactions />} />   
-          <Route path="/*" element={<Home />} />        
+          <Route path="/Transactions" element={<Transactions />} />
+          <Route path="/*" element={<Home />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </Router>
     </div>
   );
