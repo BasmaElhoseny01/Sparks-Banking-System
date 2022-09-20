@@ -36,18 +36,29 @@ https://sparksbankbasmaelhoseny.herokuapp.com/Transactions
 <li>download the zip folder of the project.</li>
 <li>unzip folder</li>
 <li>open terimnal</li>
-<li>cd to the folder of the project</li>
 
-<ol>run server side:
+<li>cd to the folder of the project
+<ul>
+
+<li>
+run server side
+<ol>
 <li>run: npm install </li>
 <li>run: npm start </li>
-</oi>
+</ol>
+</li>
 
-<ol>run client side:
+<li>
+run client side
+<ol>
 <li>run: cd client</li>
 <li>run: npm install </li>
 <li>run: npm start </li>
 </ol>
+</li>
+
+</ul>
+</li>
 
 </ol>
 DONE 😜
